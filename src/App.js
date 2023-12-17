@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Todalist from "./components/Todalist";
 import { useEffect, useState } from "react";
+import "./App.css";
 
 const baslangic = [
   {
@@ -16,13 +17,12 @@ const baslangic = [
 ];
 
 function App() {
-  const storedTodos = baslangic || JSON.parse(localStorage.getItem("todos")) ;
+  const storedTodos = baslangic || JSON.parse(localStorage.getItem("todos"));
   const [todos, setTodos] = useState(storedTodos);
-    
 
-  useEffect(()=>{
+  useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
-  },[todos])
+  }, [todos]);
 
   return (
     <div className="container">
