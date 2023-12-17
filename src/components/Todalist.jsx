@@ -17,7 +17,7 @@ const Todalist = ({ todos, setTodos }) => {
   return (
     <div>
       <h2 className="text-center text-primary">Todos</h2>
-      <ListGroup className="w-60 d-flex mx-auto ">
+      <ListGroup className="w-50 d-flex mx-auto ">
         {todos.map((todo) => (
           <ListGroup.Item
             className="m-2 text-capitalize rounded-5 d-flex justify-content-between"
