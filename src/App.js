@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import Todalist from "./components/Todalist";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const baslangic = [
   {
@@ -9,14 +9,20 @@ const baslangic = [
     completed: false,
   },
   {
-    id: new Date().getTime(),
+    id: 333,
     text: "id için uuid kullanabilirsin",
     completed: false,
   },
 ];
 
 function App() {
-  const [todos, setTodos] = useState(baslangic);
+  const storedTodos = baslangic || JSON.parse(localStorage.getItem("todos")) ;
+  const [todos, setTodos] = useState(storedTodos);
+    
+
+  useEffect(()=>{
+    localStorage.setItem("todos", JSON.stringify(todos));
+  },[todos])
 
   return (
     <div className="container">

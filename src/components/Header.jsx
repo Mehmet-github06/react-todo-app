@@ -37,7 +37,7 @@ const Header = ({setTodos,todos}) => {
           onClick={addTodo}
           disabled={!task.trim()}
         >
-          @example.com
+          Add Todo
         </Button>
       </InputGroup>
     </div>
