@@ -1,15 +1,11 @@
-<p>Clarusway<img align="right"
-  src="https://secure.meetupstatic.com/photos/event/3/1/b/9/600_488352729.jpeg"  width="15px"></p>
 
-# CC-01 : Todo App 
+
+#  Todo App 
 
 ## Description
 
 Project aims to create a Todo App.
 
-## Problem Statement
-
-- We are adding a new project to our portfolios. So you and your colleagues have started to work on the project.
 
 ## Project Skeleton
 
@@ -36,9 +32,7 @@ SOLUTION
 
 ![Project 003 Snapshot](./public/Animation.gif)
 
-## Objective
 
-Build a Todo App using ReactJS.
 
 ### At the end of the project, following topics are to be covered;
 
@@ -73,7 +67,7 @@ Build a Todo App using ReactJS.
 - Step 7: Add project gif to your project and README.md file.
 
 ## Demo
-[Todo App Live](https://react-todoapp-uuid.vercel.app/)
+[Todo App Live](https://react-todo-list-appe.netlify.app/)
 ## Notes
 
 - You can add additional functionalities to your app.
